@@ -1,0 +1,63 @@
+[package]
+name = "ros2_rust_tutorial"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 3
+
+[[bin]]
+name = "basic_publisher"
+path = "src/basic_publisher.rs"
+
+[[bin]]
+name = "basic_subscriber"
+path = "src/basic_subscriber.rs"
+
+[[bin]]
+name = "service_server"
+path = "src/service_server.rs"
+
+[[bin]]
+name = "service_client"
+path = "src/service_client.rs"
+
+[[bin]]
+name = "parameter_node"
+path = "src/parameter_node.rs"
+
+[[bin]]
+name = "timer_node" 
+path = "src/timer_node.rs"
+
+[[bin]]
+name = "publisher_subscriber"
+path = "src/publisher_subscriber.rs"
+
+[[bin]]
+name = "tf_broadcaster"
+path = "src/tf_broadcaster.rs"
+
+[[bin]]
+name = "custom_msg_publisher"
+path = "src/custom_msg_publisher.rs"
+
+[[bin]]
+name = "custom_msg_subscriber"
+path = "src/custom_msg_subscriber.rs"
+
+[dependencies]
+rclrs = "*"
+std_msgs = "*"
+visualization_msgs = "*"
+action_msgs = "*"
+sensor_msgs = "*"
+nav_msgs = "*"
+geometry_msgs = "*"
+tf2_msgs = "*"
+example_interfaces = "*"
+builtin_interfaces = "*"
+ros2_rust_tutorial_interfaces = "*"
+
+[package.metadata.ros]
+install_to_share = ["launch", "rviz"]
