@@ -1,4 +1,4 @@
-<package format="3">                                                                                 
+<package format="3">
   <name>ros2_rust_tutorial</name>
   <version>0.0.0</version>
   <description>ros2_rust_tutorial_package</description>
@@ -16,7 +16,7 @@
   <depend>tf2_msgs</depend>
   <depend>ros2_rust_tutorial_interfaces</depend>
 
-  <export>          
+  <export>
     <build_type>ament_cargo</build_type>
-  </export>         
+  </export>
 </package>
