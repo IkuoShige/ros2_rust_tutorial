@@ -41,3 +41,14 @@ colcon build
 ```
 
 Add `tf2_lmsgs` to Cargo.toml and package.xml
+
+## how to use
+
+```sh
+cd rust_ws/ && rust_ws
+git clone https://github.com/IkuoShige/ros2_rust_tutorial.git src/ros2_rust_tutorial
+git clone https://github.com/IkuoShige/ros2_rust_tutorial_interfaces.git src/ros2_rust_tutorial_interfaces
+colcon build
+source install/setup.bash
+ros2 launch ros2_rust_tutorial ros2_rust_tutorial.launch.py
+```
